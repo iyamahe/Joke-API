@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hey there, click for random jokes</h1>
+    <div class="container">
+      <div class="box1">
+        <h2>Guide :</h2>
+        <p>
+          1: Hello there, please press Joke button two to generate new joke.
+        </p>
+        <p>2: Click on jokes blocks to make them Jokes disappear</p>
+        <p>3: Click clear button to make all jokes disappear</p>
+        <div class="buttons">
+          <button class="JokeBtn">Joke</button>
+          <button class="JokeDltBtn">Clear</button>
+        </div>
+      </div>
+      <div class="box2">
+        <h2>Jokes:</h2>
+        <ol class="jokesContainer"></ol>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

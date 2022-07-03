@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --back-clr: #ead5dc;
+  --font-clr: rgb(23, 18, 18);
+}
+html {
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--back-clr);
+  gap: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  font-weight: 400;
+  margin-top: 1em;
+  color: rgb(4, 4, 39);
+  text-align: center;
+}
+.container {
+  background-color: rgba(154, 77, 62, 0.135);
+  width: min(90%, 700px);
+  min-height: 23em;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.138) 0px 1px 2px 0px,
+    rgba(161, 39, 140, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+  align-items: stretch;
+  padding: 1.7em;
+}
+
+.box1,
+.box2 {
+  background-color: #e3d5ea70;
+  line-height: 1.5;
+  letter-spacing: 0.1ch;
+  color: rgb(10, 21, 42);
+  flex-basis: 40%;
+  min-width: 300px;
+  padding: 0.5em 0.2em 0.4em 0.6em;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container p {
+  margin: 0.3em 0.2em 0.3em 0.2em;
+  color: rgb(27, 13, 13);
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box1 button {
+  text-decoration: none;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(31, 104, 126);
+  padding: 0.5em 1.2em;
+  border-radius: 2.3px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-self: center;
+  margin-top: 2em;
+}
+.box1 button:hover {
+  background-color: rgb(33, 203, 203);
+}
+.box1 button:active {
+  background-color: rgba(202, 68, 70, 0.91);
+}
+li {
+  list-style: none;
+  color: #fdfdfe;
+  font-size: 0.9em;
+  margin: 0.4em 0.5em 0.9em 0.3em;
+  box-sizing: border-box;
+  padding: 0.5em 0.4em 0.5em 0.6em;
+  border-radius: 3px;
+  background-color: rgb(22, 72, 84);
+  transition: background-color.2s, color .2s ;
+}
+li:hover {
+  color: rgb(6, 8, 0);
+  cursor: pointer;
+  background-color: white;
+}
+.jokesContainer {
+  flex-grow: 2;
+}
